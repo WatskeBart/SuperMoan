@@ -1,6 +1,6 @@
-﻿# Supermoan
+﻿# SuperMoan
 
-A Linux program that plays sound based on mouse movement intensity. The program monitors mouse movement events and plays corresponding sound files based on the movement's intensity level.
+A Linux program that plays sound based on intensity of the selected input device. The program monitors input events and plays corresponding sound files based on the movement's intensity level.
 
 Original program called nubmoan from [wttdotm](https://github.com/wttdotm/nubmoan)\
 Linux variant from [shasherazi](https://github.com/shasherazi/nubmoan)
@@ -10,7 +10,7 @@ All credit goes to these developers, I just made it SuperMoan🤠
 
 ## Features
 
-- Real-time mouse movement tracking
+- Real-time input movement tracking
 - Logarithmic scaling of movement intensity
 - Configurable movement thresholds and scaling parameters
 - Sound playback based on movement intensity (10 different levels)
@@ -20,7 +20,7 @@ All credit goes to these developers, I just made it SuperMoan🤠
 
 ## Prerequisites
 
-The program requires:
+Building requirements:
 - GCC compiler
 - ALSA sound system (for sound playback)
 - pthread library
@@ -100,7 +100,7 @@ Each file corresponds to a different intensity level:
 
 The program calculates movement intensity using the following approach:
 
-1. Calculates Euclidean distance of mouse movement (dx, dy)
+1. Calculates Euclidean distance of input movement (dx, dy)
 2. Applies configurable thresholds:
    - Movements below min_threshold return intensity level 1
    - Movements above max_threshold return intensity level 10
@@ -127,7 +127,7 @@ The program includes error handling for:
 ## Clean Exit
 
 The program handles SIGINT (Ctrl+C) gracefully:
-- Stops mouse monitoring
+- Stops input monitoring
 - Terminates sound playback
 - Prints debug statistics (if enabled)
 - Cleans up resources
