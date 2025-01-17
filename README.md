@@ -52,7 +52,7 @@ Basic usage:
 | -M | --max-threshold N | Set maximum movement threshold (default: 100.0) |
 | -b | --log-base N | Set logarithm base for scaling (default: 2.0) |
 | -n | --no-sound | Don't play sound files (for testing) |
-| -s | --sound-dir <path>  Specify custom folder containing wav files |
+| -s | --sound-dir <path> | Specify custom folder containing wav files |
 | -h | --help | Display help message |
 
 ### Examples
