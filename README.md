@@ -52,6 +52,7 @@ Basic usage:
 | -M | --max-threshold N | Set maximum movement threshold (default: 100.0) |
 | -b | --log-base N | Set logarithm base for scaling (default: 2.0) |
 | -n | --no-sound | Don't play sound files (for testing) |
+| -s | --sound-dir <path>  Specify custom folder containing wav files |
 | -h | --help | Display help message |
 
 ### Examples
@@ -88,7 +89,8 @@ Basic usage:
 
 ## Sound Files
 
-The program expects sound files to be present in the `moanswav` directory, named from 1.wav to 10.wav. Each file corresponds to a different intensity level:
+The program expects, by default, sound files to be present in the `moans` directory, named from 1.wav to 10.wav.\
+Each file corresponds to a different intensity level:
 - 1.wav: lowest intensity
 - 10.wav: highest intensity
 
